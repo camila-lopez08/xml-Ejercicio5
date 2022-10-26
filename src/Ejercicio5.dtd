@@ -1,0 +1,13 @@
+<?xml version="1.0" enconding="UTF-8"?>
+<!DOCTYPE listacompras SYSTEM  "Ejercicio5.xml">
+        <!DOCTYPE listacompras[
+
+        <!ELEMENT listacompras   (venta+)>
+        <!ELEMENT venta          (ventaacredito|ventainmediata)>
+        <!ELEMENT ventaacredito  (fechafinpago?, cantidad)>
+        <!ELEMENT ventainmediata (cantidad, divisa)>
+        <!ELEMENT fechafinpago   (#PCDATA)>
+        <!ELEMENT cantidad       (#PCDATA)>
+        <!ELEMENT divisa         (#PCDATA)>
+
+        ]
